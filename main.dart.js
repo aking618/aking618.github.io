@@ -58170,7 +58170,7 @@ F.BC.prototype={
 V:function(a,b){return new S.rY(new X.uH(null),"Groom Invite",!1,null)}}
 X.uH.prototype={
 aG:function(){var s="Aarakocra",r="Folk Hero"
-return new X.Ju(D.amg(null),P.ax(["KT",new T.fV("Luke Skywalker",s,"Bard",20,"NG",r,25,123,14,8,14,16,10,12,16),"KEITH",new T.fV("",s,"Bard",20,"NG",r,25,123,14,8,14,16,10,12,16),"DILLON",new T.fV("","Human","War Cleric",20,"CG","Soldier",30,163,18,19,10,16,10,14,8),"HAYDEN",new T.fV("","Half-Elf","Blue Dragon Sorcerer",20,"CE","Best Man",30,142,15,7,15,14,20,15,14),"DAWSON",new T.fV("","Goliath","Barbarian",20,"N","Hunter",40,245,17,24,15,11,8,21,12),"LANE",new T.fV("","Wood Elf","Circle of the Moon Druid",20,"NG","Hobbit",35,143,12,15,15,20,18,15,9),"BRYAN",new T.fV("","Gold Dragon Dragonborn","Fighter",20,"E","Criminal",30,184,13,19,17,12,16,17,14)],t.bi,t.c9),C.l)}}
+return new X.Ju(D.amg(null),P.ax(["KT",new T.fV("Za Qarc",s,"Bard",20,"NG",r,25,123,14,8,14,16,10,12,16),"KEITH",new T.fV("Qarc",s,"Bard",20,"NG",r,25,123,14,8,14,16,10,12,16),"DILLON",new T.fV("Ten Loneshield","Human","War Cleric",20,"CG","Soldier",30,163,18,19,10,16,10,14,8),"HAYDEN",new T.fV("Sylben","Half-Elf","Blue Dragon Sorcerer",20,"CE","Best Man",30,142,15,7,15,14,20,15,14),"DAWSON",new T.fV("Aukan Riverherder Veomekali","Goliath","Barbarian",20,"N","Hunter",40,245,17,24,15,11,8,21,12),"LANE",new T.fV("Trahorn Hazelheel","Wood Elf","Circle of the Moon Druid",20,"NG","Hobbit",35,143,12,15,15,20,18,15,9),"BRYAN",new T.fV("Lanculuur Lumidorim","Gold Dragon Dragonborn","Fighter",20,"E","Criminal",30,184,13,19,17,12,16,17,14)],t.bi,t.c9),C.l)}}
 X.Ju.prototype={
 p:function(a){this.d.L$=null
 this.bi(0)},
