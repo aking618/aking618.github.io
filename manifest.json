@@ -1,6 +1,6 @@
 {
-    "name": "portfolio",
-    "short_name": "portfolio",
+    "name": "groom_invite",
+    "short_name": "groom_invite",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
