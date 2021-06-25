@@ -1,0 +1,26 @@
+[[bu;;black]Personal Projects]
+
+[[b;green;black]Portfolio Website]
+June 2021
+u2022 Designed and created an interactive portfolio.
+[[bu;;black]Utilized:] HTML5, CSS, Javascript, JQuery
+
+[[b;green;black]Flutter In-Out-Board Clone App]
+November 2020
+u2022 Designed and programmed an employee tracking mobile application using Google Firebase.
+u2022 Deployed an elegant UI to increase user engagement.
+u2022 Allowed users to login, register and save data using Google Firebase and Google Firestore as a backend.
+[[bu;;black]Utilized:] Flutter, Dart, Google Firebase, Google Firestore
+
+[[b;green;black]Flutter Smash Ultimate Set Tracker App]
+May 2020 - September 2020
+u2022 Conceptualized and deployed an app to keep track of tournament sets and player information related to the videogame, Super Smash Bros Ultimate.
+u2022 Created a beautiful and intuitive UI (User Interface) to allow for enhanced usablity.
+u2022 Incorporated JSON serialization and deserialization to store and retrieve data.
+[[bu;;black]Utilized:] Flutter, Dart, JSON
+
+[[b;green;black]GitHub Automation Script]
+May 2020
+u2022 Developed a command-line script to automate the creation and deletion of GitHub repositories.
+u2022 Automatically creates a GitHub repository with a desired name, links the repository to a locally created directory and opens Visual Studio Code inside of the new project.
+[[bu;;black]Utilized:] Java, Maven, Git, Unix, Selenium

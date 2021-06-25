@@ -1,0 +1,13 @@
+Hello!
+
+What would you like to find out!
+Type in 'cat' followed by any of the following files:
+
+mystory.txt
+experience.txt
+skills.txt
+projects.txt
+contact.txt
+
+If you ever need assistance, type in 'help'.
+

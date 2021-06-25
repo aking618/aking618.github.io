@@ -1,0 +1,25 @@
+[[bu;;black]Professional Experience]
+
+[[b;green;black]Software Development Intern]
+[[bu;;black]Paycom]
+May 2021 - Present
+u2022 Built and maintained mobile applications used to streamline the research process for users in labs.
+u2022 Collaborated with colleagues to create effective solutions to bugs within the applications created.
+u2022 Worked with clients to receive feedback and implement suggestions into mobile applications.
+
+
+[[b;green;black]Mobile App Developer]
+[[bu;;black]Oklahoma State University]
+November 2020 - Present
+u2022 Built and maintained mobile applications used to streamline the research process for users in labs.
+u2022 Collaborated with colleagues to create effective solutions to bugs within the applications created.
+u2022 Worked with clients to receive feedback and implement suggestions into mobile applications.
+
+
+[[b;green;black]Student Worker]
+[[bu;;black]Oklahoma State University]
+August 2020 - November 2020
+u2022 Manage and fill IT service tickets related to educational technology.
+u2022 Service, replace, and maintain classroom technology.
+u2022 Provide aid to educators to help facilitate a hybrid learning environment.
+u2022 Coached professors in using educational technology such as OWL, Canvas, and Zoom.

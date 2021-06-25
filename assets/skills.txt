@@ -1,0 +1,33 @@
+[[bu;;black]Skills]
+
+[[b;green;black]Languages:]
+u2022 Java
+u2022 Dart
+u2022 HTML5
+u2022 CSS
+u2022 Javascript
+u2022 C++
+u2022 C#
+u2022 PHP
+u2022 SQL
+
+[[b;green;black]Tools and Frameworks:]
+u2022 Flutter
+u2022 Maven
+u2022 Git
+u2022 Unix
+u2022 JQuery
+u2022 React
+u2022 .NET
+
+[[b;green;black]Softwares:]
+u2022 Android Studio
+u2022 IntelliJ IDEA
+u2022 PHP Storm
+u2022 Visual Studio Code
+u2022 Visual Studio
+u2022 Vim
+u2022 PUTTY
+u2022 MySQL Workbench
+u2022 Github
+u2022 Bitbucket

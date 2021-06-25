@@ -1,0 +1,46 @@
+@media screen and (min-width: 1200px) {
+  :root {
+    --size: 1.4;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .ascii-art {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .ascii-art {
+    font-size: 1em;
+  }
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  display: inline-flexbox;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.ascii-art {
+  margin: 0px auto;
+  font-family: monospace;
+  white-space: pre;
+  color: white;
+}
+
+.term-wrapper {
+  border: 1px solid white;
+}
+
+.terminal {
+  padding: 5px;
+  padding-bottom: 2px;
+  height: 75%;
+  width: 100%;
+}
