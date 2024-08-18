@@ -21,7 +21,7 @@ import Typography from '@/components/general/typography';
 
 const Logo = () => (
   <Typography variant="h3" className="font-bold">
-    {'<SS />'}
+    {'<AK />'}
   </Typography>
 );
 

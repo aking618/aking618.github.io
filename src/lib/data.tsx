@@ -1,38 +1,21 @@
-import { Github, Twitter, Figma } from 'lucide-react';
+import { Github, Linkedin, Newspaper } from 'lucide-react';
 
-import LogoJavascript from '/public/images/logos/icon-javascript.svg';
-import LogoTypescript from '/public/images/logos/icon-typescript.svg';
-import LogoReact from '/public/images/logos/icon-react.svg';
-import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
-import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
-import LogoExpress from '/public/images/logos/icon-express.svg';
-import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
-import LogoNest from '/public/images/logos/icon-nest.svg';
-import LogoSocket from '/public/images/logos/icon-socket.svg';
-import LogoSocketLight from '/public/images/logos/icon-socket-light.svg';
-import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
-import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
-import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
-import LogoFigma from '/public/images/logos/icon-figma.svg';
-import LogoCypress from '/public/images/logos/icon-cypress.svg';
-import LogoCypressLight from '/public/images/logos/icon-cypress-light.svg';
-import LogoStorybook from '/public/images/logos/icon-storybook.svg';
+import LogoSwift from '/public/images/logos/icon-swift.svg';
+import LogoUIKit from '/public/images/logos/icon-uikit.svg';
+import LogoSwiftUI from '/public/images/logos/icon-swiftui.svg';
+import LogoTCA from '/public/images/logos/icon-tca.svg';
+import LogoXcode from '/public/images/logos/icon-xcode.svg';
+import LogoXcodeGen from '/public/images/logos/icon-xcodegen.gif';
+import LogoFastlane from '/public/images/logos/icon-fastlane.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
+import LogoPaycom from '/public/images/logos/icon-paycom.png';
+import LogoPhillips from '/public/images/logos/icon-phillips.jpeg';
+import LogoTuist from '/public/images/logos/icon-tuist.png';
 
-import LogoUpwork from '/public/images/logos/logo-upwork.svg';
-import LogoGreenApex from '/public/images/logos/logo-greenapex.svg';
-import LogoGreenApexLight from '/public/images/logos/logo-greenapex-light.svg';
-import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg';
-import LogoDotnpixelLight from '/public/images/logos/logo-dotnpixel-light.svg';
-
-import ProjectFiskil from '/public/images/project-fiskil.png';
-import ProjectWingie from '/public/images/project-wingie.png';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
-
-import AvatarKrisztian from '/public/images/avatar-krisztian.png';
-import AvatarEugen from '/public/images/avatar-eugen.png';
-import AvatarDummy from '/public/images/avatar-dummy.svg';
+import ProjectAStarStudio from '/public/images/project-a-star-studio.gif';
+import ProjectBracketBuddy from '/public/images/project-bracket-buddy.png';
+import ProjectKTS from '/public/images/project-kts.png';
+import ProjectInstagramClone from '/public/images/project-instagram-clone.png';
 
 import {
   ExperienceDetails,
@@ -42,12 +25,9 @@ import {
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
-  GITHUB: 'https://github.com/shahsagarm',
-  GITHUB_REPO: 'https://github.com/shahsagarm/sagarshah.dev',
-  TWITTER: 'https://twitter.com/shahsagarm',
-  FIGMA: 'https://www.figma.com/@shahsagarm',
-  FIGMA_FILE:
-    'https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop',
+  GITHUB: 'https://github.com/aking618',
+  MEDIUM: 'https://medium.com/@ayrenking',
+  LINKEDIN: 'https://www.linkedin.com/in/ayren-king/',
 };
 
 export const NAV_LINKS = [
@@ -56,12 +36,16 @@ export const NAV_LINKS = [
     href: '#about',
   },
   {
+    label: 'Experience',
+    href: '#experience',
+  },
+  {
     label: 'Work',
     href: '#work',
   },
   {
-    label: 'Testimonials',
-    href: '#testimonials',
+    label: 'Blog',
+    href: '#blog',
   },
   {
     label: 'Contact',
@@ -72,220 +56,141 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
   {
     icon: Github,
-    url: 'https://github.com/shahsagarm',
+    url: 'https://github.com/aking618',
   },
   {
-    icon: Twitter,
-    url: 'https://twitter.com/shahsagarm',
+    icon: Linkedin,
+    url: 'https://www.linkedin.com/in/ayren-king/',
   },
   {
-    icon: Figma,
-    url: 'https://www.figma.com/@shahsagarm',
-  },
+    icon: Newspaper,
+    url: 'https://medium.com/@ayrenking',
+  }
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
   {
-    label: 'Javascript',
-    logo: LogoJavascript,
-    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    label: 'Swift',
+    logo: LogoSwift,
+    url: 'https://developer.apple.com/swift/',
   },
   {
-    label: 'Typescript',
-    logo: LogoTypescript,
-    url: 'https://www.typescriptlang.org/',
+    label: 'UIKit',
+    logo: LogoUIKit,
+    url: 'https://developer.apple.com/documentation/uikit',
   },
   {
-    label: 'React',
-    logo: LogoReact,
-    url: 'https://react.dev/',
+    label: 'SwiftUI',
+    logo: LogoSwiftUI,
+    url: 'https://developer.apple.com/xcode/swiftui/',
   },
   {
-    label: 'Next.js',
-    logo: LogoNextjs,
-    url: 'https://nextjs.org/',
+    label: 'Xcode',
+    logo: LogoXcode,
+    url: 'https://developer.apple.com/xcode/',
   },
   {
-    label: 'Node.js',
-    logo: LogoNodejs,
-    url: 'https://nodejs.org/en',
+    label: 'TCA',
+    logo: LogoTCA,
+    url: 'https://github.com/pointfreeco/swift-composable-architecture',
   },
   {
-    label: 'Express.js',
-    logo: LogoExpress,
-    darkModeLogo: LogoExpressLight,
-    url: 'https://expressjs.com/',
+    label: 'XcodeGen',
+    logo: LogoXcodeGen,
+    url: 'https://github.com/yonaskolb/XcodeGen',
   },
   {
-    label: 'Nest.js',
-    logo: LogoNest,
-    url: 'https://nestjs.com/',
-  },
-  {
-    label: 'Socket.io',
-    logo: LogoSocket,
-    darkModeLogo: LogoSocketLight,
-    url: 'https://socket.io/',
-  },
-  {
-    label: 'PostgreSQL',
-    logo: LogoPostgreSQL,
-    url: 'https://www.postgresql.org/',
-  },
-  {
-    label: 'MongoDB',
-    logo: LogoMongoDB,
-    url: 'https://www.mongodb.com/',
-  },
-  {
-    label: 'Sass/Scss',
-    logo: LogoSass,
-    url: 'https://sass-lang.com/',
-  },
-  {
-    label: 'Tailwindcss',
-    logo: LogoTailwindcss,
-    url: 'https://tailwindcss.com/',
-  },
-  {
-    label: 'Figma',
-    logo: LogoFigma,
-    url: 'https://www.figma.com/',
-  },
-  {
-    label: 'Cypress',
-    logo: LogoCypress,
-    darkModeLogo: LogoCypressLight,
-    url: 'https://www.cypress.io/',
-  },
-  {
-    label: 'Storybook',
-    logo: LogoStorybook,
-    url: 'https://storybook.js.org/',
+    label: 'Tuist',
+    logo: LogoTuist,
+    url: 'https://tuist.io/',
   },
   {
     label: 'Git',
     logo: LogoGit,
     url: 'https://git-scm.com/',
   },
+  {
+    label: 'Fastlane',
+    logo: LogoFastlane,
+    url: 'https://fastlane.tools/',
+  },
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [
   {
-    logo: LogoUpwork,
-    logoAlt: 'Upwork logo',
-    position: 'Independent Freelancer',
-    startDate: new Date(2021, 10),
+    logo: LogoPhillips,
+    logoAlt: 'Phillips logo',
+    company: 'Phillips',
+    position: 'iOS Developer',
+    startDate: new Date(2024, 5),
     currentlyWorkHere: true,
     summary: [
-      'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
-      'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
+      'Developed and maintained iOS application for Phillips.',
+      'Implemented a UITesting framework to ensure the quality and maintainability of the application.',
+      'Collaborated closely with the design team to create a seamless user experience.',
+      'Met with stakeholders to gather requirements and provide updates on project progress.',
     ],
+    technologies: ['Swift', 'UIKit', 'SwiftUI', 'Xcode', 'TCA', 'Tuist'],
   },
   {
-    logo: LogoGreenApex,
-    darkModeLogo: LogoGreenApexLight,
-    logoAlt: 'Greenapex logo',
-    position: 'Team Lead',
-    startDate: new Date(2017, 6),
-    endDate: new Date(2021, 9),
+    logo: LogoPaycom,
+    logoAlt: 'Paycom logo',
+    company: 'Paycom',
+    position: 'Software Developer IV',
+    startDate: new Date(2022, 11),
+    endDate: new Date(2024, 5),
     summary: [
-      'Acted as team lead in different projects.',
-      'Brainstormed new ideas & gathered requirements for internal projects.',
-      'Designed architecture of different projects (frontend + backend).',
-      'Worked on enterprise-level projects for a variety of clients.',
-      'Handled sprint planning & task distribution.',
+      'Proposed and added GitLab CI/CD pipelines for automated testing, build archiving, and App Store deployment.',
+      'Mentored a team in developing an iOS event management app during the company’s 2023 summer internship.',
+      'Reduced UI Tests runtime by 70% through parallelism and utilization of the iOS Accessibility platform.',
+      'Developed scripts to decrease time needed for our Quality Assurance teams in testing Localizations within the app.',
+      'Improved localization efficiency by building and integrating a Swift package to automate the detection of unused and missing translations.',
     ],
+    technologies: ['Swift', 'UIKit', 'SwiftUI', 'WebKit', 'Realm', 'Fastlane', 'Xcode', 'XcodeGen', 'GitLab'],
   },
   {
-    logo: LogoDotnpixel,
-    darkModeLogo: LogoDotnpixelLight,
-    logoAlt: 'Dotnpixel logo',
-    position: 'Full Stack Developer',
-    startDate: new Date(2015, 11),
-    endDate: new Date(2017, 4),
-    summary: ['Worked as a full stack developer (React / Laravel).'],
+    logo: LogoPaycom,
+    logoAlt: 'Paycom logo',
+    company: 'Paycom',
+    position: 'Software Development Intern',
+    startDate: new Date(2021, 4),
+    endDate: new Date(2022, 11),
+    summary: [
+      'Designed and built an iOS fitness competition app, utilizing HealthKit API for precise tracking of user engagement.',
+      'Streamlined employee time tracking for over 125,000+ employees by integrating punch modifications to an Android kiosk application.',
+      'Created an internal React and PHP web app for showcasing new features to clients.',
+    ],
+    technologies: ['Swift', 'UIKit', 'HealthKit', 'ActivityKit', 'Kotlin', 'Android', 'React', 'PHP'],
   },
 ];
 
 export const PROJECTS: ProjectDetails[] = [
-  {
-    name: 'Wingie',
-    description:
-      'A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.',
-    url: 'https://www.wingie.com',
-    previewImage: ProjectWingie,
-    technologies: [
-      'React',
-      'Typescript',
-      'React Bootstrap',
-      'Firebase',
-      'Express.js',
-      'PostgreSQL',
-      'Styled Components',
-      'Redux',
-    ],
-  },
-  {
-    name: 'Fiskil',
-    description:
-      'A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.',
-    url: 'https://fiskil.com.au',
-    previewImage: ProjectFiskil,
-    technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Material UI',
-      'Redux Toolkit',
-      'React Query',
-      'Express.js',
-      'PostgreSQL',
-      'Firebase',
-      'AWS Amplify',
-      'Cypress',
-      'Storybook',
-    ],
-  },
-  {
-    name: 'Pepehousing',
-    description:
-      'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
-    url: 'https://pepehousing.com',
-    previewImage: ProjectPepehousing,
-    technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Redux Toolkit',
-      'React Query',
-      'Storybook',
-    ],
-  },
-];
-
-export const TESTIMONIALS: TestimonialDetails[] = [
-  {
-    personName: 'Krisztian Gyuris',
-    personAvatar: AvatarKrisztian,
-    title: 'Founder - inboxgenie.io',
-    testimonial:
-      'Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.',
-  },
-  {
-    personName: 'Eugen Esanu',
-    personAvatar: AvatarEugen,
-    title: 'Founder - shosho.design',
-    testimonial:
-      'Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.',
-  },
-  {
-    personName: 'Joe Matkin',
-    personAvatar: AvatarDummy,
-    title: 'Freelancer',
-    testimonial:
-      'Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.',
-  },
+    {
+      name: 'Kicking the Sheets | iOS App',
+      description: 'A task management app that enhances productivity with streak-based incentives.',
+      url: 'https://apple.co/3t9hZev',
+      previewImage: ProjectKTS,
+      technologies: ['Swift', 'SwiftUI', 'Sqlite', 'WidgetKit'],
+    },
+    {
+      name: 'Bracket Buddy | iOS App',
+      description: 'An app for Super Smash Bros. Ultimate players to track their sets and take notes on their opponents.',
+      url: 'https://github.com/aking618/BracketBuddy',
+      previewImage: ProjectBracketBuddy,
+      technologies: ['Swift', 'SwiftUI', 'SwiftData', 'OauthSwift | Oauth2', 'Apollo | GraphQL'],
+    },
+    {
+      name: 'Instagram UI Clone | iOS Demo',
+      description: 'A clone of the Instagram login and landing page built and presented at a SwiftUI workshop for Paycom\'s college outreach program.',
+      url: 'https://github.com/aking618/Instagram-UI-Clone',
+      previewImage: ProjectInstagramClone,
+      technologies: ['Swift', 'SwiftUI'],
+    },
+    {
+      name: 'A-Star Studio | MacOS App',
+      description: 'A MacOS application to visualize pathfinding with A* algorithm.',
+      url: 'https://github.com/aking618/A-Star-Studio',
+      previewImage: ProjectAStarStudio,
+      technologies: ['Swift', 'SwiftUI'],
+    }
 ];

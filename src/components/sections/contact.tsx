@@ -12,8 +12,8 @@ import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
 
-let email = 'reachsagarshah@gmail.com';
-let phone = '+91 8980500565';
+let email = 'ayrenking.dev@gmail.com';
+let phone = '+1 479-650-6539';
 
 type CopyValue = 'email' | 'phone';
 

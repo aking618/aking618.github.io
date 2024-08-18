@@ -9,22 +9,22 @@ import Footer from '@/components/layout/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const title = 'Sagar Shah | Full Stack Developer From Ahmedabad, India.';
+const title = 'Ayren King | iOS Developer';
 const description =
-  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Ahmedabad, India.';
-const url = 'https://sagarshah.dev';
+  'An iOS Developer who still uses an Android phone.';
+const url = 'https://ayrenking.dev';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   keywords: [
-    'Frontend Developer',
-    'Full Stack Developer',
-    'React Developer',
-    'Next.js Developer',
+    'iOS Developer',
+    'Mobile Developer',
+    'iOS Engineer',
+    'Mobile Engineer',
   ],
-  creator: 'Sagar Shah',
+  creator: 'Ayren King',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
@@ -34,28 +34,14 @@ export const metadata: Metadata = {
     url,
     title,
     description,
-    siteName: title,
-    images: [
-      {
-        url: '/images/open-graph-sagar.png',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title,
-    description,
-    creator: '@shahsagarm',
-    images: '/images/open-graph-sagar.png',
+    siteName: title
   },
   icons: {
     icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    shortcut: '/favicon-16x16.png', // TOOD: Replace
+    apple: '/apple-touch-icon.png', // TODO: Replace
   },
 };
-
-const googleAnalyticsId = process.env.GOOGLE_ANALYTICS_ID;
 
 export default function RootLayout({
   children,
@@ -64,23 +50,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
-      {googleAnalyticsId ? (
-        <head>
-          <Script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-          ></Script>
-          <Script id="google-anayltics-script">
-            {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', '${googleAnalyticsId}');
-          `}
-          </Script>
-        </head>
-      ) : null}
       <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
         <Providers>
           <Header />

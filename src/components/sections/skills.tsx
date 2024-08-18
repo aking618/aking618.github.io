@@ -12,11 +12,11 @@ const SkillsSection = () => {
           <Tag label="Skills" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          The skills, tools and technologies I am really good at:
+          The skills, tools and technologies I love to work with:
         </Typography>
       </div>
 
-      <div className="grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
+      <div className="grid grid-cols-3 gap-y-4 justify-items-center md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12 md:justify-center lg:justify-center">
         {TECHNOLOGIES.map((technology, index) => (
           <TechDetails {...technology} key={index} />
         ))}

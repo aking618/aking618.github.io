@@ -7,6 +7,7 @@ import Typography from '@/components/general/typography';
 import Link from '@/components/navigation/link';
 import Tag from '@/components/data-display/tag';
 import Card from '@/components/layout/card';
+import ImageWrapper from './image-wrapper';
 
 type ProjectDetailsProps = ProjectDetailsType & {
   layoutType: 'default' | 'reverse';
@@ -18,6 +19,7 @@ const ProjectDetails = ({
   technologies,
   url,
   previewImage,
+  darkModePreviewImage,
   layoutType = 'default',
 }: ProjectDetailsProps) => {
   return (
@@ -32,8 +34,9 @@ const ProjectDetails = ({
         )}
       >
         <Link noCustomization href={url} externalLink>
-          <Image
+          <ImageWrapper
             src={previewImage}
+            srcForDarkMode={darkModePreviewImage}
             alt={`${name} preview`}
             className="rounded-xl shadow-lg transition-transform duration-500 md:hover:scale-105"
             style={{ objectFit: 'cover' }}

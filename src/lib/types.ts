@@ -11,11 +11,13 @@ export type ExperienceDetails = {
   logo: string | StaticImageData;
   darkModeLogo?: string | StaticImageData;
   logoAlt: string;
+  company: string;
   position: string;
   currentlyWorkHere?: boolean;
   startDate: Date;
   endDate?: Date;
   summary: string[];
+  technologies: string[];
 };
 
 export type ProjectDetails = {
@@ -23,6 +25,7 @@ export type ProjectDetails = {
   description: string;
   url: string;
   previewImage: string | StaticImageData;
+  darkModePreviewImage?: string | StaticImageData;
   technologies: string[];
 };
 
@@ -31,4 +34,13 @@ export type TestimonialDetails = {
   personAvatar?: string | StaticImageData;
   testimonial: string;
   title: string;
+};
+
+export type MediumPost = {
+  title: string;
+  link: string;
+  image: string;
+  date: string;
+  description: string;
+  tags: string[];
 };
