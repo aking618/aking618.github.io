@@ -29,13 +29,6 @@ export type ProjectDetails = {
   technologies: string[];
 };
 
-export type TestimonialDetails = {
-  personName: string;
-  personAvatar?: string | StaticImageData;
-  testimonial: string;
-  title: string;
-};
-
 export type MediumPost = {
   title: string;
   link: string;

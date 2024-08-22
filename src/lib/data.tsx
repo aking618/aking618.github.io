@@ -20,8 +20,7 @@ import ProjectInstagramClone from '/public/images/project-instagram-clone.png';
 import {
   ExperienceDetails,
   ProjectDetails,
-  TechDetails,
-  TestimonialDetails,
+  TechDetails
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
