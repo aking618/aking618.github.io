@@ -1,6 +1,6 @@
 import Script from 'next/script';
 import { Inter } from 'next/font/google';
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 
 import './globals.css';
 import Header from '@/components/layout/header';
@@ -25,10 +25,6 @@ export const metadata: Metadata = {
     'Mobile Engineer',
   ],
   creator: 'Ayren King',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
   openGraph: {
     type: 'website',
     url,
@@ -60,3 +56,11 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+  }
+
