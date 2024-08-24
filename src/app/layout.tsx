@@ -13,6 +13,7 @@ const title = 'Ayren King | iOS Developer';
 const description =
   'An iOS Developer who still uses an Android phone.';
 const url = 'https://ayrenking.dev';
+const image = '/images/opengraph-banner.png';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -30,7 +31,8 @@ export const metadata: Metadata = {
     url,
     title,
     description,
-    siteName: title
+    siteName: title,
+    images: image,
   },
   icons: {
     icon: '/favicon.ico',
