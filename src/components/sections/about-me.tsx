@@ -36,7 +36,7 @@ const AboutMeSection = () => {
           <Typography>
             I began my journey as a mobile developer in 2020 with Android. I later
             transitioned to Flutter and was convinced to give iOS development a try.
-            Since then, I haven't looked back. I think I found my niche in
+            Since then, I haven&apos;t looked back. I think I found my niche in
             the mobile development world.
           </Typography>
           <Typography>
