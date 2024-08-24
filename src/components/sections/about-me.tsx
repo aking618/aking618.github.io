@@ -21,10 +21,10 @@ const AboutMeSection = () => {
             <Image
               src={AyrenKingFullPose}
               alt="Fullpose of Ayren"
-              className="absolute z-10 h-[360px] w-[440px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px] object-cover object-left md:object-right lg:object-right"
+              className="absolute z-10 h-[360px] w-[440px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px] object-cover object-right"
               style={{ objectFit: 'cover' }}
             ></Image>
-            <div className="absolute h-[360px] w-[480px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"></div>
+            <div className="absolute h-[360px] w-full border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"></div>
           </div>
         </div>
 
@@ -34,10 +34,9 @@ const AboutMeSection = () => {
             Curious about me? Here you have it:
           </Typography>
           <Typography>
-            I began my journey as a mobile developer as a college student in 2022,
-            and since then, I&apos;ve continued to grow and evolve as a developer, taking on new
-            challenges and learning the latest technologies along the way. Now,
-            my current focus is on iOS development. I think I found my niche in
+            I began my journey as a mobile developer in 2020 with Android. I later
+            transitioned to Flutter and was convinced to give iOS development a try.
+            Since then, I haven't looked back. I think I found my niche in
             the mobile development world.
           </Typography>
           <Typography>
@@ -47,14 +46,8 @@ const AboutMeSection = () => {
           </Typography>
           <Typography>
             When I&apos;m not in full-on developer mode, you can find me
-            training for a triathlon, trophy hunting on PlayStation, or enjoying
-            some free time. You can follow me on{' '}
-
-
-            When I&apos;m not in full-on developer mode, you can find me
-            hovering around on twitter or on indie hacker, witnessing the
-            journey of early startups or enjoying some free time. You can follow
-            me on{' '}
+            training for a triathlon, trophy hunting for PlayStation games, or
+            listening to a good podcast or audiobook. You can follow me on{' '}
             <Link
               noCustomization
               externalLink
@@ -63,7 +56,7 @@ const AboutMeSection = () => {
             >
               Medium
             </Link>{' '}
-            where I write about my experiences and share my knowledge. You can also
+            where I attempt to write about my experiences and share my knowledge. You can also
             follow me on{' '}
             <Link
               noCustomization

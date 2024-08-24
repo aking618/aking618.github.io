@@ -31,7 +31,7 @@ const HeroSection = () => {
               <span className="inline-block animate-waving-hand">👋</span>
             </Typography>
             <Typography>
-              I&apos;m an iOS Developer with a a passion for creating and learning
+              I&apos;m an iOS Developer with a passion for creating and learning
               the ins and outs of the Apple ecosystem. I feel like I can express myself
               when I&apos;m developing for iOS. I&apos;m always looking for new
               opportunities to learn and grow as a developer.
