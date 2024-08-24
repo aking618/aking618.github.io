@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     images: image,
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png', // TOOD: Replace
-    apple: '/apple-touch-icon.png', // TODO: Replace
+    icon: '/favicon.svg',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
 
 };
