@@ -78,7 +78,7 @@ const AboutMeSection = () => {
             </ul>
             <ul className="flex list-inside list-disc flex-col gap-2">
               <Typography component="li">Avid Runner</Typography>
-              <Typography component="li">Aspiring Triathlete</Typography>
+              <Typography component="li">Aspiring Triathlete (Ironman 70.3)</Typography>
             </ul>
           </div>
         </div>
