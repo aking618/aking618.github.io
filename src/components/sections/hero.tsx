@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { MapPin } from 'lucide-react';
 
-import AyrenHeadshot from '/public/images/AyrenKingHeadshot.jpg';
+import AyrenHeadshot from '/public/images/AyrenKingHeadshot.jpeg';
 import SocialIcons from '@/components/data-display/social-icons';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
