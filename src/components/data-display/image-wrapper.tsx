@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useSyncExternalStore } from 'react';
 import Image, { ImageProps, StaticImageData } from 'next/image';
 import { useTheme } from 'next-themes';
 
@@ -15,12 +15,12 @@ const ImageWrapper = ({
   ...props
 }: ImageWrapperProps) => {
   // Ref :: https://github.com/pacocoursey/next-themes#avoid-hydration-mismatch
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
   const { theme } = useTheme();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   if (!mounted) {
     return null;
