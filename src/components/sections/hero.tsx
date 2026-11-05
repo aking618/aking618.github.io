@@ -11,7 +11,7 @@ const HeroSection = () => {
     <Container id="hero">
       <div className="flex flex-col gap-12 md:flex-row">
         {/* Image */}
-        <div className="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
+        <div className="flex items-center justify-center md:order-last md:grow md:justify-end">
           <div className="relative h-[300px] w-[280px] md:h-[360px] md:w-[320px]">
             <Image
               src={AyrenHeadshot}
@@ -24,7 +24,7 @@ const HeroSection = () => {
         </div>
 
         {/* Content */}
-        <div className="flex max-w-3xl flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
+        <div className="flex max-w-3xl grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
           <div className="flex flex-col gap-2">
             <Typography variant="h1">
               Hi, I&apos;m Ayren{' '}

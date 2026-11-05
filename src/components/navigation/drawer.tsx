@@ -21,7 +21,7 @@ const DrawerOverlay = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DrawerPrimitive.Overlay
     className={mergeClasses(
-      'fixed inset-0 z-50 bg-gray-900/10 opacity-100 backdrop-blur-sm',
+      'fixed inset-0 z-50 bg-gray-900/10 opacity-100 backdrop-blur-xs',
       className
     )}
     {...props}
