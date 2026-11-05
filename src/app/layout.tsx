@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     'Mobile Engineer',
   ],
   creator: 'Ayren King',
+  alternates: {
+    canonical: url,
+  },
   openGraph: {
     type: 'website',
     url,
@@ -72,9 +75,7 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
   initialScale: 1,
   minimumScale: 1,
-  maximumScale: 1,
   width: 'device-width',
   height: 'device-height',
-  userScalable: false,
-  }
+}
 

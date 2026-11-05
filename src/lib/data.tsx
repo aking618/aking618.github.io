@@ -57,14 +57,17 @@ export const NAV_LINKS = [
 
 export const SOCIAL_LINKS = [
   {
+    label: 'GitHub',
     icon: Github,
     url: 'https://github.com/aking618',
   },
   {
+    label: 'LinkedIn',
     icon: Linkedin,
     url: 'https://www.linkedin.com/in/ayren-king/',
   },
   {
+    label: 'Medium',
     icon: Newspaper,
     url: 'https://medium.com/@ayrenking',
   }
