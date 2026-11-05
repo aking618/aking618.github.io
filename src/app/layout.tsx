@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import { Metadata, Viewport } from 'next';
 
@@ -26,6 +25,9 @@ export const metadata: Metadata = {
     'Mobile Engineer',
   ],
   creator: 'Ayren King',
+  alternates: {
+    canonical: url,
+  },
   openGraph: {
     type: 'website',
     url,
@@ -48,7 +50,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
+    <html
+      lang="en"
+      className="scroll-smooth!"
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
       <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
         <Providers>
           <Header />
@@ -68,9 +75,7 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
   initialScale: 1,
   minimumScale: 1,
-  maximumScale: 1,
   width: 'device-width',
   height: 'device-height',
-  userScalable: false,
-  }
+}
 

@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Copy, Mail, Phone } from 'lucide-react';
-// import Link from 'next/link';
+import { Copy, Mail } from 'lucide-react';
 
 import SocialIcons from '@/components/data-display/social-icons';
 import Tag from '@/components/data-display/tag';
@@ -13,30 +12,21 @@ import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
 
 let email = 'ayrenking.dev@gmail.com';
-let phone = '+1 479-650-6539';
-
-type CopyValue = 'email' | 'phone';
 
 const ContactSection = () => {
   const { width } = useWindowSize();
   const [isCopied, setIsCopied] = useState(false);
-  const [copiedValueType, setCopiedValueType] = useState<CopyValue | null>(
-    null
-  );
 
-  const handleCopyClick = async (text: string, type: CopyValue) => {
+  const handleCopyClick = async (text: string) => {
     try {
       await copyTextToClipboard(text);
       setIsCopied(true);
-      setCopiedValueType(type);
       let timoutId: any = setTimeout(() => {
         setIsCopied(false);
-        setCopiedValueType(null);
         clearTimeout(timoutId);
       }, 1500);
     } catch (error) {
       setIsCopied(false);
-      setCopiedValueType(null);
       alert('Unable to copy!');
     }
   };
@@ -48,8 +38,7 @@ const ContactSection = () => {
           <Tag label="Get in touch" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          What’s next? Feel free to reach out to me if you are looking for a
-          developer, have a query, or simply want to connect.
+          Want to chat about iOS, a project, or anything else? Reach out.
         </Typography>
       </div>
 
@@ -57,27 +46,18 @@ const ContactSection = () => {
         <div className="flex flex-col items-center md:gap-4">
           <div className="flex items-center gap-4 md:gap-5">
             <Mail className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`mailto:${email}`}> */}
-            <Typography variant="h2">{email}</Typography>
-            {/* </Link> */}
+            <a href={`mailto:${email}`}>
+              <Typography
+                variant="h2"
+                className="underline-offset-4 hover:underline"
+              >
+                {email}
+              </Typography>
+            </a>
             <IconButton
               size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(email, 'email')}
-              showTooltip={isCopied && copiedValueType === 'email'}
-              tooltipText="Copied!"
-            >
-              <Copy />
-            </IconButton>
-          </div>
-          <div className="flex items-center gap-4 md:gap-5">
-            <Phone className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`tel:${phone.replace(' ', '')}`}> */}
-            <Typography variant="h2">{phone}</Typography>
-            {/* </Link> */}
-            <IconButton
-              size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(phone.replace(' ', ''), 'phone')}
-              showTooltip={isCopied && copiedValueType === 'phone'}
+              onClick={() => handleCopyClick(email)}
+              showTooltip={isCopied}
               tooltipText="Copied!"
             >
               <Copy />

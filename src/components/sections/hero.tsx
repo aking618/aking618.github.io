@@ -11,7 +11,7 @@ const HeroSection = () => {
     <Container id="hero">
       <div className="flex flex-col gap-12 md:flex-row">
         {/* Image */}
-        <div className="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
+        <div className="flex items-center justify-center md:order-last md:grow md:justify-end">
           <div className="relative h-[300px] w-[280px] md:h-[360px] md:w-[320px]">
             <Image
               src={AyrenHeadshot}
@@ -24,7 +24,7 @@ const HeroSection = () => {
         </div>
 
         {/* Content */}
-        <div className="flex max-w-3xl flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
+        <div className="flex max-w-3xl grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
           <div className="flex flex-col gap-2">
             <Typography variant="h1">
               Hi, I&apos;m Ayren{' '}
@@ -41,16 +41,6 @@ const HeroSection = () => {
             <div className="flex gap-2">
               <MapPin className="stroke-gray-600" />
               <Typography>Oklahoma City, Oklahoma</Typography>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <div className="flex h-6 w-6 items-center justify-center">
-                <span className="relative flex h-3 w-3">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
-                </span>
-              </div>
-              <Typography>Available for new adventures</Typography>
             </div>
           </div>
           <SocialIcons />

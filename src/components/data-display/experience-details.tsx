@@ -28,9 +28,9 @@ const ExperienceDetails = ({
           src={logo}
           srcForDarkMode={darkModeLogo}
           alt={logoAlt}
-          className="rounded w-16 h-16 transition-opacity duration-300 group-hover:opacity-50"
+          className="rounded-sm w-16 h-16 transition-opacity duration-300 group-hover:opacity-50"
         />
-        <span className="rounded w-16 h-16 absolute inset-0 flex items-center justify-center text-white text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75">
+        <span className="rounded-sm w-16 h-16 absolute inset-0 flex items-center justify-center text-white text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/75">
           {company}
         </span>
       </div>

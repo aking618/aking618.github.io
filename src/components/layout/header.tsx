@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 import {
@@ -31,11 +31,9 @@ const Header = () => {
   const size = useWindowSize();
 
   // close sidebar if open in screen size < 768px
-  useEffect(() => {
-    if (size?.width && size?.width > 767 && isOpen) {
-      setIsOpen(false);
-    }
-  }, [size, isOpen]);
+  if (size?.width && size?.width > 767 && isOpen) {
+    setIsOpen(false);
+  }
 
   return (
     <header

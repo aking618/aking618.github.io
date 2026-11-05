@@ -1,4 +1,6 @@
-import { Github, Linkedin, Newspaper } from 'lucide-react';
+import { Newspaper } from 'lucide-react';
+
+import { Github, Linkedin } from '@/components/data-display/brand-icons';
 
 import LogoSwift from '/public/images/logos/icon-swift.svg';
 import LogoUIKit from '/public/images/logos/icon-uikit.svg';
@@ -19,6 +21,7 @@ import ProjectInstagramClone from '/public/images/project-instagram-clone.png';
 
 import {
   ExperienceDetails,
+  MediumPost,
   ProjectDetails,
   TechDetails
 } from '@/lib/types';
@@ -54,14 +57,17 @@ export const NAV_LINKS = [
 
 export const SOCIAL_LINKS = [
   {
+    label: 'GitHub',
     icon: Github,
     url: 'https://github.com/aking618',
   },
   {
+    label: 'LinkedIn',
     icon: Linkedin,
     url: 'https://www.linkedin.com/in/ayren-king/',
   },
   {
+    label: 'Medium',
     icon: Newspaper,
     url: 'https://medium.com/@ayrenking',
   }
@@ -101,7 +107,7 @@ export const TECHNOLOGIES: TechDetails[] = [
   {
     label: 'Tuist',
     logo: LogoTuist,
-    url: 'https://tuist.io/',
+    url: 'https://tuist.dev',
   },
   {
     label: 'Git',
@@ -120,7 +126,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
     logo: LogoPhillips,
     logoAlt: 'Phillips logo',
     company: 'Phillips',
-    position: 'Founding iOS Developer',
+    position: 'Senior iOS Engineer',
     startDate: new Date(2024, 5),
     currentlyWorkHere: true,
     summary: [
@@ -175,7 +181,6 @@ export const PROJECTS: ProjectDetails[] = [
     {
       name: 'Bracket Buddy | iOS App',
       description: 'An app for Super Smash Bros. Ultimate players to track their sets and take notes on their opponents.',
-      url: 'https://github.com/aking618/BracketBuddy',
       previewImage: ProjectBracketBuddy,
       technologies: ['Swift', 'SwiftUI', 'SwiftData', 'OauthSwift | Oauth2', 'Apollo | GraphQL'],
     },
@@ -193,4 +198,21 @@ export const PROJECTS: ProjectDetails[] = [
       previewImage: ProjectAStarStudio,
       technologies: ['Swift', 'SwiftUI'],
     }
+];
+
+export const POSTS: MediumPost[] = [
+  {
+    title: 'Mastering UIKit — Implementing a Photo Carousel with Interactive Zoom and Pan',
+    link: 'https://medium.com/@ayrenking/mastering-uikit-implementing-a-photo-carousel-with-interactive-zoom-and-pan-b7362bb24954',
+    date: '2024-08-04',
+    description: 'Most iOS apps today contain some form of a carousel. In this article, we’ll explore how to implement a feature-rich photo carousel in UIKit that also contains a few quality-of-life features.',
+    tags: ['Swift', 'UIKit'],
+  },
+  {
+    title: 'Unit Testing Private Methods in Swift',
+    link: 'https://medium.com/@ayrenking/unit-testing-private-methods-in-swift-568809dd8df8',
+    date: '2024-05-08',
+    description: 'Unit testing is a cornerstone of software development, but is it appropriate to test private methods? The simple answer is no. In practice though, there may be situations where you want to test logic hidden behind the private veil.',
+    tags: ['iOS', 'Swift Macros', 'Swift'],
+  },
 ];

@@ -10,11 +10,8 @@ const DrawerTrigger = DrawerPrimitive.Trigger;
 
 const DrawerClose = DrawerPrimitive.Close;
 
-const DrawerPortal = ({
-  className,
-  ...props
-}: DrawerPrimitive.DialogPortalProps) => (
-  <DrawerPrimitive.Portal className={mergeClasses(className)} {...props} />
+const DrawerPortal = (props: DrawerPrimitive.DialogPortalProps) => (
+  <DrawerPrimitive.Portal {...props} />
 );
 DrawerPortal.displayName = DrawerPrimitive.Portal.displayName;
 
@@ -24,7 +21,7 @@ const DrawerOverlay = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DrawerPrimitive.Overlay
     className={mergeClasses(
-      'fixed inset-0 z-50 bg-gray-900/10 opacity-100 backdrop-blur-sm',
+      'fixed inset-0 z-50 bg-gray-900/10 opacity-100 backdrop-blur-xs',
       className
     )}
     {...props}
