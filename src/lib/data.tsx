@@ -1,4 +1,6 @@
-import { Github, Linkedin, Newspaper } from 'lucide-react';
+import { Newspaper } from 'lucide-react';
+
+import { Github, Linkedin } from '@/components/data-display/brand-icons';
 
 import LogoSwift from '/public/images/logos/icon-swift.svg';
 import LogoUIKit from '/public/images/logos/icon-uikit.svg';
