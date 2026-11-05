@@ -23,7 +23,7 @@ export type ExperienceDetails = {
 export type ProjectDetails = {
   name: string;
   description: string;
-  url: string;
+  url?: string;
   previewImage: string | StaticImageData;
   darkModePreviewImage?: string | StaticImageData;
   technologies: string[];
@@ -32,7 +32,6 @@ export type ProjectDetails = {
 export type MediumPost = {
   title: string;
   link: string;
-  image: string;
   date: string;
   description: string;
   tags: string[];

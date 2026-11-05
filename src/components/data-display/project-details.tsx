@@ -33,15 +33,25 @@ const ProjectDetails = ({
             : 'md:order-last md:rounded-r-xl md:border-l'
         )}
       >
-        <Link noCustomization href={url} externalLink>
+        {url ? (
+          <Link noCustomization href={url} externalLink>
+            <ImageWrapper
+              src={previewImage}
+              srcForDarkMode={darkModePreviewImage}
+              alt={`${name} preview`}
+              className="rounded-xl shadow-lg transition-transform duration-500 md:hover:scale-105"
+              style={{ objectFit: 'cover' }}
+            />
+          </Link>
+        ) : (
           <ImageWrapper
             src={previewImage}
             srcForDarkMode={darkModePreviewImage}
             alt={`${name} preview`}
-            className="rounded-xl shadow-lg transition-transform duration-500 md:hover:scale-105"
+            className="rounded-xl shadow-lg"
             style={{ objectFit: 'cover' }}
           />
-        </Link>
+        )}
       </div>
 
       {/* Content */}
@@ -60,14 +70,16 @@ const ProjectDetails = ({
             <Tag key={index} label={technology} />
           ))}
         </div>
-        <Link
-          href={url}
-          noCustomization
-          className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
-          externalLink
-        >
-          <ExternalLink />
-        </Link>
+        {url && (
+          <Link
+            href={url}
+            noCustomization
+            className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
+            externalLink
+          >
+            <ExternalLink />
+          </Link>
+        )}
       </div>
     </Card>
   );
